@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, Harshita ❤️</title>
+  <meta name="description"
+    content="A birthday page made with love for Harshita Chaudhary — celebrating the softest, most caring heart." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-heart">💗</div>
+    <div class="loading-text">Loading something special...</div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Floating Hearts Background -->
+  <div class="floating-hearts" id="floatingHearts"></div>
+
+  <!-- Sparkle Particles -->
+  <div class="sparkle-container" id="sparkleContainer"></div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">✕</button>
+    <div class="lightbox-content">
+      <img src="" alt="Full size photo" id="lightboxImg" />
+    </div>
+  </div>
+
+  <!-- ===== SECTION 1: HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-emoji">💗</div>
+      <h1 class="hero-title">
+        Happy Birthday, <span class="highlight">Harshita</span> ❤️
+      </h1>
+      <p class="hero-subtitle">
+        This page is just for you — a little corner of the internet that celebrates the softest, most caring heart I
+        know.
+      </p>
+
+      <!-- ===== COUNTDOWN TIMER ===== -->
+      <div class="countdown-container fade-in">
+        <h3 class="countdown-title">Counting down to July 31st... ⏳</h3>
+        <div class="countdown-timer" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">00</span>
+            <span class="countdown-label">Min</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">00</span>
+            <span class="countdown-label">Sec</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#gallery" class="hero-btn" id="openGiftBtn">
+        <span>Open Your Gift</span>
+        <span>🎁</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: PHOTO GALLERY ===== -->
+  <section id="gallery">
+    <div class="fade-in">
+      <h2 class="section-title">For My Favourite Person💗💋</h2>
+      <p class="section-title-script">every picture holds a feeling ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Photo 1 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="1.jpeg" alt="Happpiness on your face is so adorable" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date"> Sweetness☺️</span>
+          <span class="text"> Happpiness on your face is so adorable </span>
+        </div>
+      </div>
+
+      <!-- Photo 1 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="10.jpg" alt="Harshita in the snow mountains" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Adventures</span>
+          <span class="text">Daring girl</span>
+        </div>
+      </div>
+
+      <!-- Photo 2 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="7.jpeg" alt="That beautiful smile" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">June 2025</span>
+          <span class="text">That smile I never want to fade and first reel of my choice</span>
+        </div>
+      </div>
+
+      <!-- Photo 3 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="3.jpeg" alt="A close-up moment" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Calmness</span>
+          <span class="text">The day when I felt real calmness by seeing you</span>
+        </div>
+      </div>
+
+      <!-- Photo 4 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="4.jpeg" alt="Harshita with a colorful cap" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">The cold days</span>
+          <span class="text">Random vibes where we just existed together</span>
+        </div>
+      </div>
+
+      <!-- Photo 5 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="5.jpeg" alt="Harshita by the mountains" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Mountain views</span>
+          <span class="text">Calm, real, and perfectly you</span>
+        </div>
+      </div>
+
+      <!-- Photo 6 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="16.PNG" alt="Harshita smiling close-up" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">That look ✨</span>
+          <span class="text">The softness that makes everything feel best</span>
+        </div>
+      </div>
+
+      <!-- Photo 7 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="38.jpg" alt="Harshita looking cute" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Late-night calls</span>
+          <span class="text">When the world felt heavy, but we had each other</span>
+        </div>
+      </div>
+
+      <!-- Photo 8 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="24.JPG" alt="Harshita by the street" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Hottness🫦</span>
+          <span class="text">Looking damn hott</span>
+        </div>
+      </div>
+
+      <!-- Photo 9 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="44.jpg" alt="Mirror selfie" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Everyday moments</span>
+          <span class="text">Effortlessly beautiful, as always</span>
+        </div>
+      </div>
+
+      <!-- Photo 10 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="25.JPG" alt="Mirror selfie in jacket" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Sun Kiss😘</span>
+          <span class="text">My favorite person, just being herself</span>
+        </div>
+      </div>
+
+      <!-- Photo 11 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="19.jpg" alt="Harshita smiling" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Stolen moments ✨</span>
+          <span class="text">The kind of beauty that make me fall for you more</span>
+        </div>
+      </div>
+
+      <!-- Photo 12 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="28.JPG" alt="Harshita portrait" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Golden hour</span>
+          <span class="text">When the light hits and everything feels right</span>
+        </div>
+      </div>
+
+      <!-- Photo 13 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="33.JPG" alt="Harshita candid" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Unfiltered 💛</span>
+          <span class="text">No pose needed, just awesome with just one expression</span>
+        </div>
+      </div>
+
+      <!-- Photo 14 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="41.jpg" alt="Harshita photo" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Cameraman Me</span>
+          <span class="text">Every place feels like home with you</span>
+        </div>
+      </div>
+
+      <!-- Photo 15 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="43.JPG" alt="Harshita looking lovely" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">That gentle glow 🌸</span>
+          <span class="text">The face I could look at forever</span>
+        </div>
+      </div>
+
+      <!-- Photo 16 -->
+      <div class="gallery-item fade-in fade-in-delay-1">
+        <img src="35.JPG" alt="Harshita WhatsApp photo" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date"> Your Kiss😘</span>
+          <span class="text">Still falling for you, every single day</span>
+        </div>
+      </div>
+
+      <!-- Photo 17 -->
+      <div class="gallery-item fade-in fade-in-delay-2">
+        <img src="23.JPG" alt="Harshita candid moment" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Quiet moments</span>
+          <span class="text">When words aren't needed, just your presence is enough</span>
+        </div>
+      </div>
+
+      <!-- Photo 18 -->
+      <div class="gallery-item fade-in fade-in-delay-3">
+        <img src="2.jpeg" alt="Harshita portrait" loading="lazy" />
+        <div class="gallery-caption">
+          <span class="date">Forever favourite 🤍</span>
+          <span class="text">The one who made my world softer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: LETTER ===== -->
+  <section id="letter">
+    <div class="fade-in">
+      <h2 class="section-title">A Note Just for You</h2>
+      <p class="section-title-script">from my heart to yours 💌</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="letter-container fade-in">
+      <h3 class="letter-greeting">Happy Birthday, Harshiii</h3>
+      <div class="letter-body">
+        <p>
+          I wanted to make something that lasts longer than a card and feels more personal than a text. Something you
+          can come back to whenever you need a reminder of how much you mean to me.
+        </p>
+        <p>
+          From the moment we met in January 2025, I could feel that you were different. There's a softness in you in
+          how you talk, how you care, how you feel, how you put efforts everything so deeply that makes my world calmer
+          and brighter.
+          You're the kind of person who notices when someone is quiet, who checks in without being asked, who carries so
+          much love in such a gentle heart.
+        </p>
+        <p>
+          I still think about our early conversations, how we slowly started vibing, how it never felt forced. And then
+          on 7 June 2025, when we decided to be together, it didn't feel like a new beginning; it felt like finally
+          admitting what was already true and meant for us.
+        </p>
+        <p>
+          This year, I've watched you care for me, feel deeply, and still show up with so much kindness even when
+          things aren't easy and when sometimes things get hard. I love how emotional you are not as a weakness, but
+          as your strength. It reminds me that
+          it's okay to feel, to be soft, to be human. Which I was waitting for your emotios to get express and come out
+          from your heart in front me.
+        </p>
+        <p>
+          My biggest wish is simple to keep that smile on your face. Not the fake one you show the world, but the real
+          one that comes when you feel safe, understood, and loved. I want you to know that with me, you never have to
+          hide your feelings or pretend to be tougher than you are. You can be your soft, emotional, beautiful, sad
+          always. As I am alwasy there for you sweetheart.
+        </p>
+        <p>
+          No matter where life takes us, I'm so glad I get to celebrate you. Happy Birthday Harshita. I wish and hope
+          your upcoming birthday to be celebrated with me with more efforts, excitements and surprises. Thank you for
+          being you, and for letting me be part of your story.
+        </p>
+      </div>
+      <div class="letter-signature">
+        <div class="sign">With all my love ♡</div>
+        <div class="date">Written just for you</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: TIMELINE ===== -->
+  <section id="timeline">
+    <!-- LOVE JOURNEY TIMER -->
+    <div class="love-timer-container fade-in">
+      <h3 class="love-timer-title">Together Till Now</h3>
+      <div class="love-timer">
+        <div class="love-timer-item">
+          <span class="love-timer-number" id="love-days">00</span>
+          <span class="love-timer-label">Days</span>
+        </div>
+        <div class="love-timer-item">
+          <span class="love-timer-number" id="love-hours">00</span>
+          <span class="love-timer-label">Hours</span>
+        </div>
+        <div class="love-timer-item">
+          <span class="love-timer-number" id="love-minutes">00</span>
+          <span class="love-timer-label">Mins</span>
+        </div>
+        <div class="love-timer-item">
+          <span class="love-timer-number" id="love-seconds">00</span>
+          <span class="love-timer-label">Secs</span>
+        </div>
+      </div>
+      <p class="love-timer-since">Since 1 January 2025</p>
+    </div>
+
+    <div class="fade-in">
+      <h2 class="section-title">Our Story So Far</h2>
+      <p class="section-title-script">the chapters of us ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">January 2025</div>
+        <div class="timeline-text">"The day we first talk in the group and everything quietly changed in positive."
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">March 2025</div>
+        <div class="timeline-text">"Slow conversations, late vibes, and realizing we have some spark for eachother."
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">May 2025</div>
+        <div class="timeline-text">"understanding each other, available for each other and our first meet at your school
+          gate."</div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">7 June 2025</div>
+        <div class="timeline-text">"The day you became mine and I became yours. "</div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">July 2025</div>
+        <div class="timeline-text">"Our first date at daily dose cafe as a couple."</div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Early 2025</div>
+        <div class="timeline-text">"The day we became 'us' the start of our real love story, where we stand and put
+          efforts for each other."</div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">January 2026</div>
+        <div class="timeline-text">"All the little moments: calls, messages, and just being there for each other arguing
+          over things and still choosing the love over it."</div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">Now ✨</div>
+        <div class="timeline-text">"Two people who choose each other, building something soft, pure and real forever."
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: TRAITS ===== -->
+  <section id="traits">
+    <div class="fade-in">
+      <h2 class="section-title">Why You're So Special</h2>
+      <p class="section-title-script">all the things that make you, sweetheart ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="traits-grid">
+      <div class="trait-card fade-in fade-in-delay-1">
+        <div class="trait-icon">🌸</div>
+        <h3 class="trait-title">Your Softness</h3>
+        <p class="trait-text">The way you feel everything so deeply it's not a weakness, it's your superpower.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-2">
+        <div class="trait-icon">💛</div>
+        <h3 class="trait-title">Your Caring Nature</h3>
+        <p class="trait-text">How you always put others before yourself, checking in without being asked.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-3">
+        <div class="trait-icon">✨</div>
+        <h3 class="trait-title">Your Emotional Honesty</h3>
+        <p class="trait-text">You don't hide what you feel, and that kind of openness is genuinely beautiful.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-4">
+        <div class="trait-icon">😊</div>
+        <h3 class="trait-title">That Smile</h3>
+        <p class="trait-text">The one I live to see more often the real one, when you feel truly safe.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-5">
+        <div class="trait-icon">🌿</div>
+        <h3 class="trait-title">The Way You Vibe</h3>
+        <p class="trait-text">Calm, real, and perfectly you. No pretence, just pure authenticity.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-1">
+        <div class="trait-icon">🦋</div>
+        <h3 class="trait-title">Your Gentle Strength</h3>
+        <p class="trait-text">Showing up with kindness even when things aren't easy that takes real courage.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-2">
+        <div class="trait-icon">🌙</div>
+        <h3 class="trait-title">Your Late-Night Heart</h3>
+        <p class="trait-text">The way you stay up to talk, to listen, to just be there even when you're tired.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-3">
+        <div class="trait-icon">💌</div>
+        <h3 class="trait-title">Your Thoughtfulness</h3>
+        <p class="trait-text">You remember the little things no one else notices and that's what makes you rare.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-4">
+        <div class="trait-icon">🤍</div>
+        <h3 class="trait-title">Your Loyalty</h3>
+        <p class="trait-text">Once you love someone, you love with your whole heart no half measures, ever.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-5">
+        <div class="trait-icon">🎀</div>
+        <h3 class="trait-title">Your Innocence</h3>
+        <p class="trait-text">There's a purity in how you see the world it makes everything feel a little more
+          magical.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-1">
+        <div class="trait-icon">🌷</div>
+        <h3 class="trait-title">Your Patience</h3>
+        <p class="trait-text">Its little low but, you give people space to grow, to mess up, and to come back that's
+          real love.</p>
+      </div>
+
+      <div class="trait-card fade-in fade-in-delay-2">
+        <div class="trait-icon">💫</div>
+        <h3 class="trait-title">Your Energy</h3>
+        <p class="trait-text">Being around you feels like coming home warm, safe, and exactly where I'm meant to be.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: REMINDER ===== -->
+  <section id="reminder">
+    <div class="fade-in">
+      <h2 class="section-title">A Little Reminder For You</h2>
+      <p class="section-title-script">for whenever you need it ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="reminder-container fade-in">
+      <button class="reminder-btn" id="reminderBtn">
+        <span>Press When You Need This</span>
+        <span>💗</span>
+      </button>
+
+      <div class="reminder-message" id="reminderMessage">
+        <div class="reminder-glow"></div>
+        <p>You are so deeply loved, Harshita.</p>
+        <p>You don't have to be strong all the time.</p>
+        <p>Your feelings are valid, your heart is beautiful, and you are safe with me.</p>
+        <p>I'm not going anywhere. 💗</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: WISHES ===== -->
+  <section id="wishes">
+    <div class="fade-in">
+      <h2 class="section-title">This Year, I Hope…</h2>
+      <p class="section-title-script">my wishes for your new chapter ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="wishes-container">
+      <div class="wish-item fade-in">
+        <span class="wish-icon">🌸</span>
+        <p class="wish-text">I hope this year brings you more moments where your heart feels completely at peace.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">✨</span>
+        <p class="wish-text">I hope you feel proud of how far you've come, even on the days you don't see it.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">💛</span>
+        <p class="wish-text">I hope you never forget how loved, how cherished, and how important you are.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">😊</span>
+        <p class="wish-text">I hope you find more reasons to smile that real, quiet smile I love.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">🦋</span>
+        <p class="wish-text">I hope you always feel safe to be your soft, emotional, true self — especially with me.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">🌙</span>
+        <p class="wish-text">I hope every night ends with you knowing someone out there is grateful you exist.</p>
+      </div>
+
+      <div class="wish-item fade-in">
+        <span class="wish-icon">💗</span>
+        <p class="wish-text">I hope this year is the softest, happiest, most beautiful one yet — because you deserve it
+          all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7.25: BIRTHDAY CELEBRATION ===== -->
+  <section id="celebration">
+    <div class="fade-in">
+      <h2 class="section-title">Make a Wish 🎂</h2>
+      <p class="section-title-script">blow the candles and let the magic happen ♡</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="celebration-container fade-in">
+      <!-- Virtual Cake -->
+      <div class="cake-container" id="birthdayCake">
+        <div class="cake">
+          <div class="plate"></div>
+          <div class="layer layer-bottom"></div>
+          <div class="layer layer-middle"></div>
+          <div class="layer layer-top"></div>
+          <div class="icing"></div>
+          <div class="drip drip1"></div>
+          <div class="drip drip2"></div>
+          <div class="drip drip3"></div>
+
+          <!-- Candles -->
+          <div class="candle candle1">
+            <div class="flame"></div>
+          </div>
+          <div class="candle candle2">
+            <div class="flame"></div>
+          </div>
+          <div class="candle candle3">
+            <div class="flame"></div>
+          </div>
+        </div>
+      </div>
+      <p class="cake-hint">Tap each candle to blow it out!</p>
+
+      <!-- Make a Wish Input -->
+      <div class="wish-container" id="wishContainer">
+        <textarea id="wishInput" class="wish-input" placeholder="Type your special wish here..." rows="2"></textarea>
+        <button id="sendWishBtn" class="wish-btn">
+          Send Wish ✈️
+        </button>
+      </div>
+      <div id="wishSentMsg" class="wish-sent-msg hidden">
+        Your wish is flying to the universe! ✨
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7.5: SECRET SCRAPBOOK ===== -->
+  <section id="scrapbook">
+    <div class="fade-in">
+      <h2 class="section-title">Our Secret Scrapbook </h2>
+      <p class="section-title-script">locked with a memory, opened with love 🔒</p>
+      <hr class="section-divider" />
+    </div>
+
+    <!-- Lock Screen Container -->
+    <div class="scrapbook-lock-container fade-in" id="scrapbookLock">
+      <div class="lock-card" id="lockCard">
+        <span class="lock-icon">🔒</span>
+        <h3 class="lock-title">Vault Password Required</h3>
+        <p class="lock-desc">Enter the password (hint: your birthday in DDMMYYYY format) to unlock our private memory
+          vault.</p>
+        <div class="lock-input-group">
+          <input type="password" id="scrapbookPass" placeholder="Enter password..." autocomplete="off" />
+          <button id="scrapbookUnlockBtn" class="lock-btn">Unlock Vault 🗝️</button>
+        </div>
+        <p class="lock-error" id="scrapbookError"></p>
+      </div>
+    </div>
+
+    <!-- Hidden Scrapbook Content Grid -->
+    <div class="scrapbook-content-container hidden" id="scrapbookContent">
+      <p class="scrapbook-success-msg">✨ Vault Unlocked! Welcome to our secret corner my love. ✨</p>
+      <div class="scrapbook-grid">
+        <div class="scrapbook-item fade-in" style="--rotation: -2deg;">
+          <div class="polaroid">
+            <img src="IMG_5954.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Your laugh is my absolute favorite sound.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 3deg;">
+          <div class="polaroid">
+            <img src="IMG_5957.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Staring into your eyes and forgetting the rest of the world.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -1.5deg;">
+          <div class="polaroid">
+            <img src="IMG_5958.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">How can one person carry so much warmth?</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 4deg;">
+          <div class="polaroid">
+            <img src="IMG_5959.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Every single second with you is a memory I cherish.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -3deg;">
+          <div class="polaroid">
+            <img src="IMG_5961.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">A peaceful day spent just enjoying being close.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 2.5deg;">
+          <div class="polaroid">
+            <img src="IMG_5987.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">The softest girl with the biggest, most beautiful heart.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -4deg;">
+          <div class="polaroid">
+            <img src="IMG_5989.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Just you, being your wonderful, cute self.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 1.5deg;">
+          <div class="polaroid">
+            <img src="IMG_5991.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Looking at you and knowing everything will be alright.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -2.5deg;">
+          <div class="polaroid">
+            <img src="IMG_5993.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">That cute face of yours makes my heart melt instantly.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 3.5deg;">
+          <div class="polaroid">
+            <img src="IMG_5996.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Capturing a moment of pure happiness.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -1deg;">
+          <div class="polaroid">
+            <img src="IMG_5999.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Your warmth is like a soft blanket on a cold night.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 2deg;">
+          <div class="polaroid">
+            <img src="IMG_6006.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Every photo of you is my new favorite photo.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -3deg;">
+          <div class="polaroid">
+            <img src="IMG_6007.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Holding onto this beautiful feeling forever.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 4deg;">
+          <div class="polaroid">
+            <img src="IMG_6011.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Our conversations are the highlight of my days.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -2deg;">
+          <div class="polaroid">
+            <img src="IMG_6714.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">So incredibly lucky to call you mine.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 3deg;">
+          <div class="polaroid">
+            <img src="IMG_6718.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">A perfect day captured in a single frame.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -1.5deg;">
+          <div class="polaroid">
+            <img src="IMG_6721.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">The way you smile makes the world so much brighter.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 2.5deg;">
+          <div class="polaroid">
+            <img src="IMG_6734.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">I love you just the way you are — soft and real.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -4deg;">
+          <div class="polaroid">
+            <img src="IMG_6981.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">You deserve all the sweetness and love in the world.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 1deg;">
+          <div class="polaroid">
+            <img src="IMG_6983.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">A special little memory of us.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -3deg;">
+          <div class="polaroid">
+            <img src="IMG_6989.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">My safe haven, my peace, my favourite girl.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 2deg;">
+          <div class="polaroid">
+            <img src="IMG_6992.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Looking at this and smiling all over again.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -2deg;">
+          <div class="polaroid">
+            <img src="IMG_6993.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">A little piece of our endless story.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 3.5deg;">
+          <div class="polaroid">
+            <img src="IMG_6994.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Thank you for bringing so much color into my life.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -1.5deg;">
+          <div class="polaroid">
+            <img src="IMG_6995%202.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Always keep that beautiful smile glowing.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 4deg;">
+          <div class="polaroid">
+            <img src="IMG_6995.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">My absolute favourite view in the entire world.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -3deg;">
+          <div class="polaroid">
+            <img src="IMG_6996.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">You make my heart do a happy dance.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 2.5deg;">
+          <div class="polaroid">
+            <img src="IMG_6998.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">A quiet day, full of peace and love.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: -2deg;">
+          <div class="polaroid">
+            <img src="IMG_7004.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">You're the sweetest dream that actually came true.</div>
+          </div>
+        </div>
+        <div class="scrapbook-item fade-in" style="--rotation: 3deg;">
+          <div class="polaroid">
+            <img src="IMG_7007.JPG" alt="Scrapbook Memory" loading="lazy" />
+            <div class="polaroid-caption">Forever and always, my softest place to land.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7.6: VIDEO ===== -->
+  <section id="video">
+    <div class="fade-in">
+      <h2 class="section-title">One Video For You</h2>
+      <p class="section-title-script">press play to see how much you mean to me 🎥</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="video-container fade-in">
+      <div class="video-wrapper">
+        <video controls class="birthday-video">
+          <!-- Add your video file here: <source src="your-video.mp4" type="video/mp4"> -->
+        </video>
+        <source src="your-video.mp4" type="video/mp4">
+        <div class="video-placeholder-hint">
+          <p><em>(Replace this placeholder with your video in the HTML)</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7.7: QUIZ ===== -->
+  <section id="quiz">
+    <div class="fade-in">
+      <h2 class="section-title">How Well Do You Know Us?</h2>
+      <p class="section-title-script">a little playful test for my favourite girl 💭</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="quiz-container fade-in" id="quizContainer">
+      <div class="quiz-intro" id="quizIntro">
+        <p>Let's see if you remember our cutest little details! Ready?</p>
+        <button class="hero-btn quiz-btn" id="startQuizBtn">
+          <span>Start Quiz ✨</span>
+        </button>
+      </div>
+
+      <div class="quiz-question-container hidden" id="quizQuestionBox">
+        <div class="quiz-progress" id="quizProgress">Question 1 of 5</div>
+        <h3 class="quiz-question" id="quizQuestionText">Question text goes here</h3>
+        <div class="quiz-options" id="quizOptions">
+          <!-- Options will be injected via JS -->
+        </div>
+        <div class="quiz-feedback hidden" id="quizFeedback">Feedback text</div>
+        <button class="hero-btn quiz-btn hidden" id="nextQuizBtn">
+          <span>Next Question 🎀</span>
+        </button>
+      </div>
+
+      <div class="quiz-result hidden" id="quizResultBox">
+        <div class="quiz-result-icon">🏆</div>
+        <h3 class="quiz-result-title">Quiz Complete! 🎉</h3>
+        <p class="quiz-result-text" id="quizResultText">You got X out of Y right!</p>
+        <div class="quiz-reward" id="quizReward">
+          <p><strong>Your Reward:</strong> Infinite kisses and hugs! 😘🤗</p>
+        </div>
+        <button class="hero-btn quiz-btn" id="restartQuizBtn">
+          <span>Play Again 🔄</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: SURPRISE ===== -->
+  <section id="surprise">
+    <div class="fade-in">
+      <h2 class="section-title">A Little Surprise</h2>
+      <p class="section-title-script">just for you 🎁</p>
+      <hr class="section-divider" />
+    </div>
+
+    <div class="surprise-container fade-in">
+      <button class="hero-btn surprise-btn" id="surpriseBtn">
+        <span>Click for a Surprise 🎁</span>
+      </button>
+
+      <div id="hiddenMessage" class="hidden-message hidden">
+        <p>You make every day brighter! 🎈✨</p>
+        <p>I love you to the moon and back! Happy Birthday my love 💗</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: FOOTER ===== -->
+  <footer id="footer">
+    <div class="footer-hearts" id="footerHearts"></div>
+    <p class="footer-main fade-in">
+      Made with love for Harshita Chaudhary <span class="footer-pulse">❤️</span>
+    </p>
+    <p class="footer-sub fade-in">
+      Revisit this page anytime you need a reminder of how special you are for me harshiii 💋💗
+    </p>
+  </footer>
+
+  <!-- Music Player (Fixed) -->
+  <div class="music-player" id="musicPlayer">
+    <span class="music-label">Play our fav song 🎵</span>
+    <button class="music-btn" id="musicBtn" aria-label="Play or pause music">
+      🎵
+    </button>
+  </div>
+
+  <!-- Background Music — Replace the src with your song file or URL -->
+  <audio id="bgMusic" loop preload="none">
+    <!-- Add your song file here, e.g.: <source src="our-song.mp3" type="audio/mpeg" /> -->
+    <source src="our-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
